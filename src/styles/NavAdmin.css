@@ -1,0 +1,130 @@
+.navbar  {
+    background-color:#7200ca !important;
+}
+
+.offcanvas{
+    background-color: #7200ca !important;
+}
+
+.offcanvas-header{
+    background-color: #7200ca !important;
+    border-bottom: 0.01rem solid white;
+}
+
+.navbar-brand {
+    color: rgb(255, 255, 255);
+    user-select: none;
+}
+
+.navbar-brand:hover {
+    color: rgb(255, 255, 255);
+}
+
+.bbb {
+    width: 80px;
+    height: 36px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 6, 46) ;
+    color: white;
+    user-select: none;
+}
+.bbb:hover{
+    opacity: 0.9;
+}
+
+.nav-link { 
+    color: white;
+}
+
+.offcanvas-title { 
+    color: white
+}
+
+.inputt { 
+    width: 350px;
+    min-width: 250px;
+    height: 36px;
+    margin: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.inputtfocus { 
+    background-color: rgb(224, 220, 220);
+    box-shadow: none;
+}
+
+
+.navbar-toggler-icon{ 
+    color: white !important
+
+}
+
+#offcanvasNavbar { 
+    color: white !important
+}
+
+.offcanvas-body { 
+ padding-left: 25px;
+}
+
+.nav-link {
+    border-radius: 8px;
+    padding-left: 15px;
+    user-select: none;
+}
+
+.nav-link:hover { 
+    background-color: aliceblue;
+    color: black;
+    border-radius: 8px;
+}
+
+.nav-link::selection { 
+    background-color:red
+}
+
+
+.footerContainer {
+    display: flex;
+    margin-top: 248px;
+}
+
+.ContImage img { 
+    height: 40px;
+    border-radius: 50%;
+}
+
+.Contname {
+   align-items: center;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+
+/* 
+.TOGLER { 
+    color: rgb(0, 0, 0);
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+} */
+
+.AVER { 
+    color: rgb(255, 255, 255) !important;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #7200ca;
+    border: none;
+}
+
+.nav-link:focus { 
+    color: rgb(191, 200, 207);
+}

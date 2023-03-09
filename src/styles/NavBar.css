@@ -1,0 +1,185 @@
+.NavDiv {}
+
+.NotResponsive {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7200ca;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    padding: 40px;
+    top: 0;
+}
+
+.Responsive {
+    display: none;
+}
+
+.logo {
+    height: 60px;
+    width: 150px;
+    background-color: #7200ca;
+}
+
+.ContainerImg {
+    height: 60px;
+    width: 150px;
+}
+
+.ContainerInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonNav {
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(83, 32, 117);
+    color: white;
+    user-select: none;
+}
+
+
+.BuildAndProducts {
+    margin-left: -30px;
+}
+
+.BuildAndProducts button {
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #7200ca;
+    color: white;
+    user-select: none;
+    border-bottom: 0.1em solid white;
+}
+
+
+.BuildAndProducts button:hover {
+    color: #12f8a0;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.BtnLogSing {
+    width: 80px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(83, 32, 117);
+    color: white;
+    user-select: none;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.BtnLogSing:hover {
+    color: #12f8a0;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.BtnUser {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7200ca;
+    color: white;
+    user-select: none;
+    transform: translateY(-2px);
+    margin-top: 5px;
+    margin-right: -4px;
+}
+
+.BtnUser:hover {
+    color: #12f8a0;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.CartContainer {
+    margin-right: -22px;
+    margin-left: 9px;
+    margin-top: 11px;
+    background-color: #7200ca;
+    border: none;
+}
+
+.Cart {
+    font-size: 30px;
+    color: white;
+}
+
+.Cart:hover {
+    color: #12f8a0;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.UserLogo {
+    margin-left: 18px;
+    margin-top: 2px;
+    font-size: 28px;
+    color: white;
+}
+
+
+.UserLogo2 { 
+    margin-left: 12px;
+    margin-top: 1px;
+    font-size: 29px;
+    color: white;
+}
+
+
+.UserLogo:hover {
+    color: #12f8a0;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .NotResponsive {
+        display: none;
+    }
+
+    .Responsive {
+        display: flex;
+        justify-content: space-between;
+        background-color: #7200ca;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        position: fixed;
+        z-index: 999;
+        padding: 35px;
+        padding-left: 10px;
+        top: 0;
+    }
+    .ContainerInfo {
+        align-items: center;
+    }
+    .CartContainer {
+        margin: 0;
+        margin-right: -22px;
+        margin-left: 9px;
+    }
+    .UserRegister{
+        width: 50px;
+    }
+}
+@media screen and (max-width: 361px) {
+    .Responsive{
+        width: 100%;
+    }
+}

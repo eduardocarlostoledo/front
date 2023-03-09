@@ -1,0 +1,154 @@
+/* html {
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    margin-bottom: 240px;
+} */
+  
+.ContainerCart{
+    margin-top: 120px;
+    border-radius: 20px;
+}
+
+.h2{
+    font-size:36px;
+    text-transform:initial;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.h3{
+    font-size:16px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+
+    width: 200px;
+    text-align: center;
+    transform: translateY(-120px);
+}
+
+.NavCart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+}
+
+
+
+.ButtonCart{
+    color: black;
+    background: white;
+    border: 1px solid black;
+    height: 40px;
+}
+.ButtonCart:hover{
+    color: white;
+    background: black;
+}
+
+.ButtonDeleteAll{
+    font-size:16px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    width: 200px;
+    text-align: center;
+}
+
+.BotonCheckout{
+    margin-top: -140px;
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 140px;
+}
+
+@media screen and (max-width: 400px){
+    .ContainerCart{
+        margin-top: 80px;
+    }
+    .h2{
+        padding: 5px;
+        padding-right: 0;
+        width: 250px;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }    
+    .NavCart{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .NavCart div{
+        width: 150px;
+    }
+    .EmptyP{
+        font-size: 20px;
+        margin-top: 100px;
+        margin-bottom: 120px;
+        transform: scale(2);
+    }
+    .ContainerSumRest{
+        transform: scale(.7);
+        margin: 0;
+        gap: 80px;
+    }
+    /* .DivAllCards{
+        margin: 20px 20px 30px 5px;
+        /* margin-right: 20px;
+        margin-bottom: 30px;
+        margin-top: 20px; */
+    /* } */ */
+    .ContainerSumRest p {
+        position: absolute;
+        padding-left: 50px;
+        padding-top: 17px;
+        transform: scale(1.5);
+    }
+    .ContainerSumRest button {
+       width: 50px;
+    }
+    .h3 {
+        width: 130px;
+        justify-content: flex-start;
+    }
+    .ButtonDeleteAll{
+
+    }
+}

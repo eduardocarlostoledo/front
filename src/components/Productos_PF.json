@@ -1,0 +1,242 @@
+[
+    {
+      "id": 1,
+      "name": "Intel Core i9-11900K",
+      "price": 499.99,
+      "type": "Processor",
+      "brand": "Intel",
+      "image": "https://www.venex.com.ar/products_images/1625487702_0413607bi.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Nvidia GeForce RTX 3080",
+      "price": 799.99,
+      "type": "Graphics Card",
+      "brand": "Nvidia",
+      "image": "https://www.deffo.com.ar/wp-content/uploads/2022/07/GV-N308TVISION-OC-12GD-1.webp"
+    },
+    {
+      "id": 3,
+      "name": "Samsung 970 EVO Plus 1TB",
+      "price": 199.99,
+      "type": "Solid State Drive",
+      "brand": "Samsung",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_910386-MLA45485310636_042021-O.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Corsair Dominator Platinum RGB 32GB",
+      "price": 189.99,
+      "type": "Memory",
+      "brand": "Corsair",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_952277-MLA51405895969_092022-O.jpg"
+    },
+    {
+      "id": 5,
+      "name": "ASUS ROG Maximus XII Hero",
+      "price": 449.99,
+      "type": "Motherboard",
+      "brand": "ASUS",
+      "image": "https://www.pcarts.com/media/catalog/product/cache/7012a79e4a1074c36cabbd79393f5c4e/r/o/rog_maximus_xii_hero_wifi.png"
+    },
+    {
+      "id": 6,
+      "name": "Cooler Master H500M",
+      "price": 149.99,
+      "type": "Case",
+      "brand": "Cooler Master",
+      "image": "https://katech.com.ar/wp-content/uploads/GAB148.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Corsair RM850x 850W",
+      "price": 139.99,
+      "type": "Power Supply",
+      "brand": "Corsair",
+      "image": "https://app.contabilium.com/files/explorer/20302/Productos-Servicios/concepto-8118177.png"
+    },
+    {
+      "id": 8,
+      "name": "Logitech G Pro Wireless",
+      "price": 149.99,
+      "type": "Mouse",
+      "brand": "Logitech",
+      "image": "https://dpq25p1ucac70.cloudfront.net/seller-place-files/mrkl-files/1711/OTRAS%20CATEGORIAS/ACCESORIOS%20DE%20GOPRO/001_0000_001_0000_mouse-logitech-g-pro-x-superlight-wireless-lightspeed-hero-bla_174511508207_49.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "HyperX Cloud II",
+      "price": 99.99,
+      "type": "Headset",
+      "brand": "HyperX",
+      "image": "https://www.peakcomputacion.com/wp-content/uploads/2021/12/AURICULAR-HYPERX-CLOUD-II-7-1-RED.jpg"
+    },
+    {
+      "id": 10,
+      "name": "ASUS ROG Swift PG279QZ",
+      "price": 599.99,
+      "type": "Monitor",
+      "brand": "ASUS",
+      "image": "https://dlcdnwebimgs.asus.com/gain/42BD1450-5437-42FD-8F5B-1777841C8EC3/w717/h525"
+    },
+    {
+        "id": 11,
+        "name": "Razer BlackWidow Elite",
+        "price": 129.99,
+        "type": "Keyboard",
+        "brand": "Razer",
+        "image": "https://www.manual.ar/thumbs/products/l/1092943-razer-blackwidow-elite.jpg"
+      },
+    {
+        "id": 12,
+        "name": "Razer BlackWidow Elite",
+        "price": 139.99,
+        "type": "Keyboard",
+        "brand": "Razer",
+        "image": "https://www.liontech-gaming.com/wp-content/uploads/2021/06/TECLADO-RAZER-BLACKWIDOW-ELITE-SPANISH-1.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Corsair K95 RGB Platinum XT",
+        "price": 199.99,
+        "type": "Keyboard",
+        "brand": "Corsair",
+        "image": "https://cdn.mos.cms.futurecdn.net/j5hNffGdJrnnKzrJhYG6X4.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Steelseries Rival 600",
+        "price": 79.99,
+        "type": "Mouse",
+        "brand": "Steelseries",
+        "image": "https://media.steelseriescdn.com/thumbs/catalogue/products/00994-rival-600/bb0a643f86414f49b04da758dd316d16.png.1200x627_q100_crop-fit_optimize.png"
+      },
+      {
+        "id": 15,
+        "name": "Logitech G Pro X",
+        "price": 129.99,
+        "type": "Headset",
+        "brand": "Logitech",
+        "image": "https://techbuysv.com/wp-content/uploads/2016/03/Logitech-G-Pro-X-Wireless-Gaming-Headset-Black-5099206089693-20042021-08-p.jpg"
+      },
+      {
+        "id": 16,
+        "name": "AMD Ryzen 9 5950X",
+        "price": 749.99,
+        "type": "Processor",
+        "brand": "AMD",
+        "image": "https://www.fullh4rd.com.ar/img/productos/Pics_Prod/micro-amd-ryzen-9-5950x-scooler-svideo-0.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Gigabyte AORUS RTX 3080",
+        "price": 829.99,
+        "type": "Graphics Card",
+        "brand": "Gigabyte",
+        "image": "https://www.comeros.com.ar/wp-content/uploads/2022/10/Comeros-AORUS-GV-N308TAORUSM-12GD-9.webp"
+      },
+      {
+        "id": 18,
+        "name": "Seagate FireCuda 520 1TB",
+        "price": 199.99,
+        "type": "Solid State Drive",
+        "brand": "Seagate",
+        "image": "https://static3.caseking.de/media/image/thumbnail/sssg-014_sssg_014_01_285x255.jpg"
+      },
+      {
+        "id": 19,
+        "name": "Patriot Viper Steel DDR4 32GB",
+        "price": 99.99,
+        "type": "Memory",
+        "brand": "Patriot",
+        "image": "https://cdnx.jumpseller.com/ultimate-gamer-store/image/18732070/Viper_steel_H_web.jpg?1652987622"
+      },
+      {
+        "id": 20,
+        "name": "MSI MPG Z590 Gaming Edge WiFi",
+        "price": 199.99,
+        "type": "Motherboard",
+        "brand": "MSI",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_988107-MLA47192040205_082021-O.jpg"
+      },
+      {
+        "id": 21,
+        "name": "Corsair H150i Elite Capellix",
+        "price": 129.99,
+        "type": "CPU Cooler",
+        "brand": "Corsair",
+        "image": "https://plecom.imgix.net/iil-235305-643031.jpg?fit=fillmax&fill=solid&fill-color=ffffff&auto=format&w=1000&h=1000"
+      },
+      {
+        "id": 22,
+        "name": "EVGA SuperNOVA 750W",
+        "price": 99.99,
+        "type": "Power Supply",
+        "brand": "EVGA",
+        "image": "https://images.evga.com/products/gallery/png/220-GA-0750-X1_LG_1.png"
+      },
+      {
+        "id": 23,
+        "name": "Acer Predator XB273K",
+        "price": 799.99,
+        "type": "Monitor",
+        "brand": "Acer",
+        "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71KaGlmHBSL.jpg"
+      },
+      {
+        "id": 24,
+        "name": "ASUS ROG Strix RTX 3060 Ti",
+        "price": 599.99,
+        "type": "Graphics Card",
+        "brand": "ASUS",
+        "image": "https://www.comeros.com.ar/wp-content/uploads/2022/01/Comeros-ASUS-ROG-STRIX-RTX3060TI-O8G-V2-GAMING-fcc87b-1.webp"
+      },
+      {
+        "id": 25,
+        "name": "Samsung 970 EVO Plus 1TB",
+        "price": 199.99,
+        "type": "Solid State Drive",
+        "brand": "Samsung",
+        "image": "https://static.chollometro.com/threads/raw/RlPd6/975736_1/re/1024x1024/qt/60/975736_1.jpg"
+      },
+      {
+        "id": 26,
+        "name": "Cooler Master MasterCase H500",
+        "price": 119.99,
+        "type": "PC Case",
+        "brand": "Cooler Master",
+        "image": "https://www.solutionbox.com.ar/images/articulos/MCMH500IGNN_1.jpg"
+      },
+      {
+        "id": 27,
+        "name": "HyperX Fury RGB DDR4 16GB",
+        "price": 79.99,
+        "type": "Memory",
+        "brand": "HyperX",
+        "image": "https://media.kingston.com/kingston/features/ktc-features-memory-beast-ddr4-rgb.jpg"
+      },
+      {
+        "id": 28,
+        "name": "Gigabyte AORUS Master X570",
+        "price": 199.99,
+        "type": "Motherboard",
+        "brand": "Gigabyte",
+        "image": "https://www.pcarts.com/media/catalog/product/cache/7012a79e4a1074c36cabbd79393f5c4e/x/5/x570_aorus_master.png"
+      },
+      {
+        "id": 29,
+        "name": "Logitech G903 Lightspeed",
+        "price": 99.99,
+        "type": "Mouse",
+        "brand": "Logitech",
+        "image": "https://computelweb.com/wp-content/uploads/2020/12/G903-FRENTE.png"
+      },
+      {
+        "id": 30,
+        "name": "Audio-Technica ATH-AD700X",
+        "price": 99.99,
+        "type": "Headset",
+        "brand": "Audio-Technica",
+        "image": "https://puroaudio.com.ar/wp-content/uploads/2022/04/9727001_800.jpg"
+      }
+    ]

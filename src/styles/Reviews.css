@@ -1,0 +1,152 @@
+.ContainerReviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.StarReview{
+    margin-left: 560px;
+    transform: translateY(40px);
+}
+
+.DivReview{
+    display: flex;
+    flex-direction: column;
+}
+
+.NameReview{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.inputReview{
+    height: 100px;  
+    width: 680px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.ButtonReview{
+    margin-top: 40px;
+    width: 680px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.627);
+    color: rgb(255, 255, 255);
+    user-select: none;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 650px){
+    .inputReview{
+        height: 100px;  
+        width: 400px;
+        padding: 20px;
+        text-align: justify;
+    }
+    .StarReview{
+        margin-left: 300px;
+        transform: translateY(40px);
+    }   
+    .NameReview{
+        margin-left: 20px;
+    }
+    .inputReview{
+        height: 100px;  
+        width: 400px;
+        padding: 20px;
+        text-align: justify;
+        margin-left: 20px;
+    }
+    .ButtonReview{
+        
+        width: 400px;
+        height: 40px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 550px){
+    .ContainerReviews{
+        transform: translateX(0px);
+    }
+    .inputReview{
+        height: 50px;  
+        width: 480px;
+        padding: 20px;
+        text-align: justify;
+    }
+    .StarReview{
+        margin-left: 100px;
+        transform: translateY(40px);
+    }   
+    .NameReview{
+        margin-left: 20px;
+    }
+    .inputReview{
+        height: 50px;  
+        width: 420px;
+        padding: 20px;
+        text-align: justify;
+        margin-left: 20px;
+    }
+    .ButtonReview{
+        
+        width: 420px;
+        height: 40px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    
+    
+    .StarReview{
+        margin-left: 60px;
+        transform: translateY(40px);
+    }   
+    .NameReview{
+        margin-left: 20px;
+    }
+    .inputReview{
+        height: 50px;  
+        width: 300px;
+        padding: 20px;
+        text-align: justify;
+    }
+    .ButtonReview{
+        
+        width: 300px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 361px){
+    .ContainerReviews{
+        transform: translateX(-0.5rem);
+    }
+    
+    .StarReview{
+        margin-left: 100px;
+        transform: translateY(40px);
+    }   
+    .NameReview{
+        margin-left: 20px;
+    }
+    .inputReview{
+        height: 50px;  
+        width: 300px;
+        padding: 20px;
+        text-align: justify;
+    }
+    .ButtonReview{
+        
+        width: 300px;
+        height: 40px;
+    }
+}

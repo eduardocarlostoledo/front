@@ -1,0 +1,178 @@
+
+.Products{
+    margin-top: 120px;
+}
+
+.DivCardsFilters {
+    display: flex;
+    flex-direction: row;
+}
+
+.DivFilter {
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+.CardContainer{
+    margin-top: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.DivProducts{
+    margin-bottom: 230px;
+}
+
+.ContainerFilters{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    margin-top: 20px;  
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.Filter{
+   width: 250px; 
+   height: 35px;
+   border-radius: 20px;
+   text-align: center;
+}
+
+.Filter option{
+    background-color: white;
+    color: #aa01ff;
+}
+
+.Filter:hover{
+   background-color: #e7b8ff;
+}
+
+.SearchButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+.swal-overlay--show-modal {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.SubmitBuscar {
+    width: 60px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+}
+
+.InputB{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.SubmitBuscar {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(26, 160, 194);
+    color: white;
+    user-select: none;
+}
+.SubmitB{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #e7b8ff;
+    border-radius: 20px;
+}
+
+.SubmitB:hover{
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.Todos{
+    width: 200px;
+    height: 40px;
+    background-color: #e7b8ff;
+    border-radius: 20px;
+    border: none;
+}
+.Todos:hover{
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width: 650px){
+    .DivCardsFilters{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .DivProducts{
+        margin-bottom: -130px;
+    }
+    .DivFilter{
+        justify-content: center;
+        width: 80%;
+        height: 240px; 
+        margin: 0;
+    }
+    .DivFilter h2{
+        display: none;
+    }
+    .searchButton {
+        margin: 0;
+    }
+    .Todos{
+        margin-bottom: 5px;
+    }
+    .ContainerFilters {
+        gap: 5px;
+        margin-bottom: 0;
+    }
+    .CardContainer{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .DivAllCards{
+        width: 8.75rem;
+        margin: 0px;
+    }
+}

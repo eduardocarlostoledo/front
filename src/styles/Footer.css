@@ -1,0 +1,71 @@
+/* html {
+    min-height: 100%;
+    position: relative;
+  }
+body {
+  margin: 0;
+  margin-bottom: 20px;
+} */
+
+
+.ContainerFooter{
+  position: absolute;
+  background-color: white;
+  color: black;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.ContainerLogo{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+align-content: center
+}
+
+.Logo{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+align-content: center;
+}
+
+.LinkMembers h3{
+  color: black;
+  
+}
+
+.ContainerLogo a{
+color: rgb(251, 90, 184);
+text-decoration: none;
+}
+
+.ContainerLogo a:hover{
+color: blue;
+text-decoration: none;
+}
+.Copyright {
+  margin: auto;
+}
+
+@media screen and (max-width: 650px){
+  .ContainerFooter{
+    width: 100%;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .Computer{
+    display: none;
+  }
+}
+
+@media screen and (max-width:361px){
+  .ContainerFooter{
+    width: 100%;
+  }
+}

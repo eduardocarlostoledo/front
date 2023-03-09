@@ -1,0 +1,31 @@
+.Marcas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.MarcaContainer{
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.MarcaContainer:hover{
+    background-color: #e7b8ff;
+}
+
+@media screen and (max-width: 650px){
+    .Marcas {
+        display: none;
+    }
+}

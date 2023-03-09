@@ -1,0 +1,120 @@
+.ContainerAll { 
+    background-color: rgba(255, 255, 255, 0.945);
+    margin-top: 30px;
+    width: 490px;
+    height: 550px;
+    padding: 25px;
+    margin: 15px;
+    box-shadow: 15px 15px 8px rgba(155, 147, 147, 0.75);
+    margin-top: 100px;
+    border-radius: 8px;
+
+}
+
+.ContainerAllForm { 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.here { 
+
+    color:  rgb(0, 96, 151);
+
+    border: none;
+    background-color: white;
+}
+
+.register { 
+    color: black;
+    height: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.name {
+    width: 200px;
+}
+.hola { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastname { 
+    width: 200px;
+}
+
+.btnR{ 
+    color: white;
+    font-size: 23px;
+    background-color: gray;
+    width: 440px;
+    height: 45px;
+    margin-top: 15px;
+    border: none;
+
+}
+.btnR:hover { 
+    background-color: rgb(102, 99, 99);
+}
+
+
+
+.pack {
+    margin-bottom: 15px;
+}
+
+.containerBtn { 
+    display: flex;
+    justify-content: center;
+}
+
+.down {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.inputs:focus {
+    border-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.name:focus {
+    border-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+
+}
+.lastname:focus {
+    border-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.warning {
+    border: solid red 1px;
+    border-radius: 0.2em;
+    
+  }
+  
+  .spanError {
+    font-size: 12px;
+    position: absolute;
+    color: red;
+    margin-top: 2px;
+    margin-bottom:15px ;
+  }
+
+  @media (max-width: 500px) {
+    .ContainerAll {
+      width: 80%;
+      height: 630px;
+    }
+    .hola {
+        flex-wrap: wrap;
+    }
+    .name {
+        width: 65vw;
+    }
+    .lastname {
+        width: 65vw;
+    }
+  }

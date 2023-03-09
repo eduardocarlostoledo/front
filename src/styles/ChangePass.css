@@ -1,0 +1,52 @@
+.DivIngresaEmail{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.inputEmail{
+
+}
+
+.PingresaEmail{
+    font-size: 3.5vh;
+    text-align: center;
+}
+
+.inputEmail{
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.botonsIngresaEmail{
+    border: none;
+    width: 80px;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.botonsIngresaEmail:hover{
+    background-color: rgb(0, 141, 0);
+    color: white;
+}
+
+.LinkBack{
+    text-decoration: none;
+    background-color: rgb(4, 167, 4);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.PSuccessfully{
+    color: rgb(4, 167, 4);
+    font-size: 5vh;
+    text-align: center;
+    margin-top: 50px;
+}
