@@ -21,6 +21,8 @@ import { useNavigate } from "react-router-dom";
 import About from "./components/About";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import ChangePass from "./components/Changepass";
+import axios from "axios";
+axios.defaults.baseURL = "https://back-production-148d.up.railway.app"
 
 function App() {
   const dispatch = useDispatch();
