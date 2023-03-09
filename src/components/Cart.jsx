@@ -21,7 +21,7 @@ export default function Cart() {
 
 
     useEffect(() => {
-        fetch('http://localhost:3001/cart')
+        fetch('https://back-production-148d.up.railway.app/cart')
         .then(response => response.json())
         .then(data => setCartItems([...data]))
         .catch(error =>swal('Cart is empty', "Cart is empty", 'error') );
@@ -62,14 +62,14 @@ export default function Cart() {
             navigate("/login")
         }
         else{ 
-          fetch("http://localhost:3001/pay/preference", {
+          fetch("https://back-production-148d.up.railway.app/pay/preference", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(preferencia.reverse()),
         });
-            fetch("http://localhost:3001/pay/create_preference", {
+            fetch("https://back-production-148d.up.railway.app/pay/create_preference", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -109,7 +109,7 @@ export default function Cart() {
     const handleDeleteAllCart = async () => {
         try {
             // Hacer una petición DELETE al servidor para eliminar todo el contenido del carrito
-            await fetch('http://localhost:3001/cart', {
+            await fetch('https://back-production-148d.up.railway.app/cart', {
                 method: 'DELETE'
             });
             // Actualizar el estado local del carrito para que se muestre vacío

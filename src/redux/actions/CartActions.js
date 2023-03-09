@@ -9,14 +9,14 @@ export const UPDATE = 'UPDATE';
 
 // export const getCart = () => {
 //     return async function(dispatch) {
-//         const carts = await axios('http://localhost:3001/cart')
+//         const carts = await axios('/cart')
 //         console.log(carts)
 //         return dispatch({type: GET_CART, payload:carts.data})
 //     }
 // }
 export const getCart = () => async (dispatch) =>{
     try {
-        return await axios('http://localhost:3001/cart').then(r=>
+        return await axios('/cart').then(r=>
             dispatch({type: GET_CART, payload:r.data}))
     } catch (error) {
             console.log(error)
@@ -25,20 +25,20 @@ export const getCart = () => async (dispatch) =>{
 
 export const addToCart = (payload) => {
     return async function (dispatch){
-        const cart = await axios.post('http://localhost:3001/cart', payload)
+        const cart = await axios.post('/cart', payload)
         return dispatch({type: ADD_TO_CART, payload:cart.data})
     }
 }
 
 export const deleteOneCart = (prodId) => {
     return async function (dispatch){
-        const cart = await axios.delete(`http://localhost:3001/cart/${prodId}`)
+        const cart = await axios.delete(`/cart/${prodId}`)
         return dispatch({type: DELETE_ONE_CART, payload: cart.data})
     }
 }
 export const deleteAllFromCart = () => {
     return async function (dispatch){
-        const cart = await axios.delete('http://localhost:3001/cart/')
+        const cart = await axios.delete('/cart/')
         return dispatch({type: DELETE_ALL_FROM_CART, payload: cart.data})
     }
 }
@@ -46,7 +46,7 @@ export const deleteAllFromCart = () => {
 
 export function postCart(payload, preferenceId){
     return async function (dispatch){
-        const response = await axios.post('http://localhost:3001/cart', payload);
+        const response = await axios.post('/cart', payload);
         console.log(response);
         // Enviar el preferenceId como payload en la acción
         return dispatch({type: POST_CART, payload: {cart: response.data, preferenceId: preferenceId}});

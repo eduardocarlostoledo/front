@@ -24,7 +24,7 @@ export default function Profile() {
   const [country, setCountrie] = useState({})
 
   useEffect(() => {
-    fetch(`http://localhost:3001/order`)
+    fetch(`https://back-production-148d.up.railway.app/order`)
       .then((res) => res.json())
       .then((data) => {
         setCountrie(data);
