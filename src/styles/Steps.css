@@ -2,8 +2,6 @@
     margin-top: 15px;
 }
 
-
-
 .steps_wrapper {
     background-color: #fff;
     height: 700px;
@@ -42,12 +40,6 @@
 .type_img_select:active{
     background-color: #000B1F;
 }
-
-/* .type_img:hover {
-    background-color: #D5CBBF;
-    border-radius: 15px;
-    padding:7px
-} */
 
 .type_wrapper {
     display: flex;

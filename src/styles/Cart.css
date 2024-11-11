@@ -129,12 +129,7 @@ body{
         margin: 0;
         gap: 80px;
     }
-    /* .DivAllCards{
-        margin: 20px 20px 30px 5px;
-        /* margin-right: 20px;
-        margin-bottom: 30px;
-        margin-top: 20px; */
-    /* } */ */
+    
     .ContainerSumRest p {
         position: absolute;
         padding-left: 50px;

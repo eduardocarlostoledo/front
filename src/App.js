@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { Home } from "./components/Home";
@@ -22,7 +21,8 @@ import About from "./components/About";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import ChangePass from "./components/Changepass";
 import axios from "axios";
-axios.defaults.baseURL = "https://back-production-148d.up.railway.app"
+axios.defaults.baseURL = process.env.REACT_APP_BACK
+console.log(axios.defaults.baseURL, "asdasdsa")
 
 function App() {
   const dispatch = useDispatch();

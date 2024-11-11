@@ -59,28 +59,6 @@ export const createProduct =  (payload)=> async(dispatch)=>{
   dispatch({type: CREATE_PRODUCT, payload}))
 };
 
-// export const createProduct = (product) => {
-//   return async (dispatch) => {
-//     console.log("/products", product);
-//     try {
-//       const response = await fetch("https://back-production-148d.up.railway.app/products", {
-//         method: "POST",
-//         headers: {
-//           "Content-Type": "application/json",
-//         },
-//         body: JSON.stringify(product),
-//       });
-
-//       console.log("CREATE_PRODUCT", response);
-//       const data = await response.json();
-//       dispatch({ type: "CREATE_PRODUCT", payload: data });
-
-//     } catch (error) {
-//       console.error(error);
-//     }
-//   };
-// };
-
 
 export const updateProduct= (id,payload)=> async()=>{
     return await axios.put(`/products/${id}`,payload)
@@ -107,13 +85,6 @@ export const getAllTypes = () => {
     return dispatch({type: GET_ALL_TYPES, payload: json.data})
   }
 }
-
-// export const getPage = (page,brand,type,price) => async (dispatch) => {
-//   return await axios.get(`localhost:3001/filter?page=${page}&brand=${brand}&type=${type}&price=${price}`)
-//   .then(r => dispatch({ type : GET_PAGE, payload : r}))
-//   .catch(e => console.error(e))
-
-// }
 
 export const getPage = (page,brand,type,price) => {
   return async function(dispatch) {

@@ -48,7 +48,7 @@ export const AdminUsers = () => {
 
 
   useEffect(() => {
-    fetch(`https://back-production-148d.up.railway.app/order`)
+    fetch(`${process.env.REACT_APP_BACK}/order`)
       .then((res) => res.json())
       .then((data) => {
         setCountrie(data);
