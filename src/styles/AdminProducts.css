@@ -68,7 +68,7 @@
 }
 
 .ButtonSubmit {
-    background-color: #4CAF50;
+    background-color: #D5CBBF;
     color: white;
     padding: 7px 15px;
     margin: 8px 0;
@@ -78,7 +78,7 @@
 }
 
 .ButtonSubmit:hover{
-    background-color: #3d8f41;
+    background-color: #D5CBBF;
 }
 
 .ActionsDiv {

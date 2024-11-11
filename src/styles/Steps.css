@@ -33,18 +33,18 @@
     object-fit: contain;
     margin: 20px;
     transition: 0.5s;
-    background-color: #e7b8ff;
+    background-color: #D5CBBF;
     padding:11px;
     border-radius: 10px;
     box-shadow: 1px 1px #1d1d1c;
 }
 
 .type_img_select:active{
-    background-color: #7200ca;
+    background-color: #000B1F;
 }
 
 /* .type_img:hover {
-    background-color: #e7b8ff;
+    background-color: #D5CBBF;
     border-radius: 15px;
     padding:7px
 } */
@@ -80,7 +80,7 @@
 }
 
 .current_price_ammount {
-    background-color: #7200ca;
+    background-color: #000B1F;
     color: #fff;
     display: inline-block;
     padding: 10px;

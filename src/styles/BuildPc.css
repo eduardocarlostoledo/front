@@ -36,7 +36,7 @@
    font-size: 25px;
    margin-left: 25px;
    border: none;
-   background-color: #7200ca;
+   background-color: #000B1F;
    object-fit: contain;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .finished_usd {
-   background-color: #7200ca;
+   background-color: #000B1F;
    color: #fff;
    padding: 25px 15px 15px 15px;
    width: 350px;

@@ -3,11 +3,11 @@
 }
 
 .offcanvas{
-    background-color: #7200ca !important;
+    background-color: #000B1F !important;
 }
 
 .offcanvas-header{
-    background-color: #7200ca !important;
+    background-color: #000B1F !important;
     border-bottom: 0.01rem solid white;
 }
 
@@ -121,7 +121,7 @@
     color: rgb(255, 255, 255) !important;
     font-size: 17px;
     font-weight: bold;
-    background-color: #7200ca;
+    background-color: #000B1F;
     border: none;
 }
 
