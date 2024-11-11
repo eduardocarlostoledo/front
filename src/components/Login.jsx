@@ -78,16 +78,16 @@ export const Login = () => {
     const viewAlert = async  () => {
 
           let hola = await dispatch(postUsersGoogle(infoGoogle));
-          console.log(hola, "post");
+          //console.log(hola, "post");
            const email = {
             email : infoGoogle.email
            }
-           console.log(email, "mail");
+           //console.log(email, "mail");
            const usuario = await dispatch(loginGoogle(email))
-           console.log(usuario,  "usuario");
+           //console.log(usuario,  "usuario");
 
            if (usuario.success) {
-            console.log(usuario.data.status, "status");  // ACA TENGO
+            //console.log(usuario.data.status, "status");  // ACA TENGO
            
             if (usuario.data.status) {
 

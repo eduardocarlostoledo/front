@@ -38,7 +38,7 @@ export const Home = () => {
                 <div className='Galery'>
                     <div className='Card'>
                         <div className='Image'>
-                            <img className='CardImg' src="https://www.venex.com.ar/products_images/1625487702_0413607bi.jpg" alt="Imagen 1" />
+                            <img className='CardImg' src="https://th.bing.com/th/id/OIP.4BBtZhGrjtduJt6G8JErsgHaHa?rs=1&pid=ImgDetMain" alt="Imagen 1" />
                         </div>
                         <div>
                             <p className='CardText'>The highest officially supported memory speed is 3200 MHz, but with overclocking (and the right memory modules) you can go even higher.</p>

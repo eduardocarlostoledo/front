@@ -77,7 +77,7 @@ export default function Cart() {
             body: JSON.stringify(orderData),
             })
             .then(function (response) {
-                console.log("RESPONSE" , response)
+                //console.log("RESPONSE" , response)
                 return response.json();
             })
 

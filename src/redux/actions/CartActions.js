@@ -47,7 +47,7 @@ export const deleteAllFromCart = () => {
 export function postCart(payload, preferenceId){
     return async function (dispatch){
         const response = await axios.post('/cart', payload);
-        console.log(response);
+        //console.log(response);
         // Enviar el preferenceId como payload en la acción
         return dispatch({type: POST_CART, payload: {cart: response.data, preferenceId: preferenceId}});
     }           

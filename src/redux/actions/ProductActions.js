@@ -118,7 +118,7 @@ export const getAllTypes = () => {
 export const getPage = (page,brand,type,price) => {
   return async function(dispatch) {
     const json = await axios.get(`/filter?page=${page}&brand=${brand}&type=${type}&price=${price}`)
-    console.log(json)
+    //console.log(json)
     return dispatch({type: GET_PAGE, payload: json.data})
   }
 }

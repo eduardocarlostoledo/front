@@ -58,7 +58,7 @@ export const AdminUsers = () => {
   }
     , []);
   
-    console.log(country, "hola");
+    //console.log(country, "hola");
 
  
   const [reload, setReload] = useState(false)
@@ -102,7 +102,7 @@ export const AdminUsers = () => {
 
     const { password, ...values } = value;
    
-    console.log({...values, admin: value.admin});
+    //console.log({...values, admin: value.admin});
      
     if (value.admin) { 
       swal({

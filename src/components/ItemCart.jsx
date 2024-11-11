@@ -25,7 +25,7 @@ export default function ItemCart({
   const cart = useSelector((state) => state.cart);
 
   const handleAdd = () => {
-    console.log(product);
+    //console.log(product);
     if (product.stock <= amount) {
       swal("Stock limit", "", "error");
       return null;

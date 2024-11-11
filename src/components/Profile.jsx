@@ -34,7 +34,7 @@ export default function Profile() {
   }
     , []);
   
-console.log(country, "count");
+//console.log(country, "count");
   // const history = useHistory();
   const navigate = useNavigate();
 

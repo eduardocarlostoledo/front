@@ -1,87 +1,77 @@
 import "../styles/Products.css";
 import { HiMagnifyingGlass } from 'react-icons/hi2';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { useSelector, useNavigate } from "react-redux";
-import { filterByBrands, filterByPrice, filterByType, getAllBrands, getAllProducts, getAllProductsName, getAllTypes } from "../redux/actions/ProductActions";
-import Card from '../components/Card'
-import {Marcas} from '../components/Marcas'
+import { 
+    filterByBrands, filterByPrice, filterByType, 
+    getAllBrands, getAllProducts, getAllProductsName, getAllTypes 
+} from "../redux/actions/ProductActions";
+import Card from '../components/Card';
 import Paginado from "./Paginado";
 
 export const Products = () => {
-    const dispatch = useDispatch()
-    const product = useSelector((state) => state.products)
-    const brand = useSelector((state) => state.brands)
-    const type = useSelector((state) => state.types)
-    // const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const product = useSelector((state) => state.products);
+    const brand = useSelector((state) => state.brands);
+    const type = useSelector((state) => state.types);
     
+    const [currentPage, setCurrentPage] = useState(1);
+    const [charactersPerPage] = useState(9);
+    const [name, setName] = useState('');
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
-      dispatch(getAllProducts())
-      dispatch(getAllBrands())
-      dispatch(getAllTypes())
-    },[dispatch]);
+        setLoading(true);
+        Promise.all([
+            dispatch(getAllProducts()),
+            dispatch(getAllBrands()),
+            dispatch(getAllTypes())
+        ]).then(() => setLoading(false));
+    }, [dispatch]);
 
-    // useEffect(() => {
-    //     const isAuthenticated = localStorage.getItem('isAuthenticated');
-    //     if (isAuthenticated === "afuera") {
-    //       navigate('/login');
-    //     }
-    //   }, [navigate]);
+    const currentProducts = product.slice(
+        (currentPage - 1) * charactersPerPage,
+        currentPage * charactersPerPage
+    );
 
-    const [currentPage, setCurrentPage] = useState(1)
-    const [charactersPerPage, ] = useState(9) //setCharactersPerPage
-    const indexOfLastCharacter = currentPage * charactersPerPage
-    const indexOfFirstCharacter = indexOfLastCharacter - charactersPerPage
-    const currentProducts = product.slice(indexOfFirstCharacter, indexOfLastCharacter)
+    const paginado = (pageNumber) => setCurrentPage(pageNumber);
 
-    const paginado = (pageNumber) => {
-        setCurrentPage(pageNumber)
-    }
-
-             /* search */
-
-    const [name, setName] = useState('')
-    
-    
     const handleInputChange = (e) => {
-        e.preventDefault();
         setName(e.target.value);
-        console.log(name)
         setCurrentPage(1);
-    }
+    };
 
     const handleSubmit = (e) => {
-        e.preventDefault()
-        dispatch(getAllProductsName(name))
-        setCurrentPage(1);
-    }
-
-    /* Click que trae todos los productos de nuevo */
-
-    const handleClick = (e) => {
         e.preventDefault();
+        dispatch(getAllProductsName(name));
+        setCurrentPage(1);
+    };
+
+    const handleClick = () => {
         dispatch(getAllProducts());
-    }
+    };
 
     const handleFilterBrands = (e) => {
-        dispatch(filterByBrands(e.target.value))
-        setCurrentPage(1)
-    }
+        dispatch(filterByBrands(e.target.value));
+        setCurrentPage(1);
+    };
 
-    /* Filtrado por Types */
     const handleFilterTypes = (e) => {
-        dispatch(filterByType(e.target.value))
-        setCurrentPage(1) 
-       
-    }
+        dispatch(filterByType(e.target.value));
+        setCurrentPage(1);
+    };
 
-    /* Filtrado por precio */
-
-    const [,setPrice] = useState('')
     const handleFilterPrice = (e) => {
         dispatch(filterByPrice(e.target.value));
         setCurrentPage(1);
-        setPrice(`Price ${e.target.value}`)
+    };
+
+    if (loading) {
+        return (
+            <div className="LoaderContainer">
+                <div className="Loader">Loading...</div>
+            </div>
+        );
     }
 
     return (
@@ -90,54 +80,58 @@ export const Products = () => {
                 <div className="DivCardsFilters">
                     <div className="DivFilter">
                         <h2>Filters</h2>
-                        <button className="Todos" onClick={(e) => handleClick(e)}>Reload all Products</button>
+                        <button className="Todos" onClick={handleClick}>Reload all Products</button>
                         <div className="SearchButton" id="InputB">
-                            <input className='InputB' type='text' placeholder="Search..." onChange={(e) => handleInputChange(e)}/> 
-                            <button className='SubmitB' type="submit" onClick={(e) => handleSubmit(e)}> < HiMagnifyingGlass className="icon"/></button>
+                            <input 
+                                className='InputB' 
+                                type='text' 
+                                placeholder="Search..." 
+                                onChange={handleInputChange}
+                            /> 
+                            <button 
+                                className='SubmitB' 
+                                type="submit" 
+                                onClick={handleSubmit}
+                            >
+                                <HiMagnifyingGlass className="icon" />
+                            </button>
                         </div>
                         <div className="ContainerFilters">
-                            
-                            <select id="filterBrandsSelect" className="Filter" onChange={(e) => handleFilterBrands(e)}>
+                            <select id="filterBrandsSelect" className="Filter" onChange={handleFilterBrands}>
                                 <option value="All" defaultValue='default'>All Brands</option>
-                                {brand.map((b, index) => ( 
-                                    <option key={index} type="reset" value={b.name}>{b.name}</option>
+                                {brand.map((b, index) => (
+                                    <option key={index} value={b.name}>{b.name}</option>
                                 ))}
                             </select>
-                            
-                            <select id="filterTypesSelect" className="Filter" onChange={(e) => handleFilterTypes(e)}>
+                            <select id="filterTypesSelect" className="Filter" onChange={handleFilterTypes}>
                                 <option value="All" defaultValue='default'>All Types</option>
-                                {type.map((t, index) => {
-                                    return <option key={index} value={t.name}>{t.name}</option>
-                                })} 
+                                {type.map((t, index) => (
+                                    <option key={index} value={t.name}>{t.name}</option>
+                                ))} 
                             </select>
-                            
-                            <select id="filterPriceSelect" className="Filter" onChange={(e) => handleFilterPrice(e)}>
-                                <option value="all" disabled={true}>All price</option>
+                            <select id="filterPriceSelect" className="Filter" onChange={handleFilterPrice}>
+                                <option value="all" disabled>All price</option>
                                 <option value="ASC">Lower price</option>
                                 <option value="DES">Higher price</option>
                             </select>
                         </div>
                     </div>
-                    
-                
                     <div className="CardContainer">
-                        {currentProducts?.map((p, index) => (
+                        {currentProducts.map((p, index) => (
                             <Card
-                            id={p.id}
-                            name={p.name}
-                            price={p.price}
-                            image={p.image}
-                            key={index}
-                        />
+                                id={p.id}
+                                name={p.name}
+                                price={p.price}
+                                image={p.image}
+                                key={index}
+                            />
                         ))}
                     </div>
-                    
                 </div>
                 <Paginado
                     charactersPerPage={charactersPerPage}
                     product={product.length}
                     paginado={paginado}
-
                 />
             </div>
         </div>

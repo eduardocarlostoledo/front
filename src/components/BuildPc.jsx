@@ -101,7 +101,7 @@ export const BuildPc = () => {
     }
     if (item.type === "case") {
       setType("Complete");
-      console.log(input);
+      //console.log(input);
     }
     setInput({
       ...input,
@@ -126,7 +126,7 @@ export const BuildPc = () => {
 
   const addMapCart = () => {
     for (const key in input) {
-      console.log(input[key]);
+      //console.log(input[key]);
       handleAddCart(input[key]);
     }
     dispatch(update(true))
@@ -171,13 +171,13 @@ export const BuildPc = () => {
         <div className={Complete ? "displaynone" : "AllCards"}>
           {data ? (
             data.map((item) => (
-              <div onClick={(e) => handleSelect(e, item)} className="Card">
-                <Card
+              <div onClick={(e) => handleSelect(e, item)} className="Card" key={item.id}>
+                <Card                
                   name={item.name}
                   price={item.price}
                   image={item.image}
                   isForBuildPc={true}
-                  key={item.id}
+                  
                 />
               </div>
             ))

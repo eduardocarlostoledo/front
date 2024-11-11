@@ -4,7 +4,7 @@ import github_logo from "../images/Github_Logo.png"
 import portfolio_logo from "../images/Portfolio_Logo.png"
 
 export default function AboutCard ({image,name,linkedin,github,portfolio}) {
-    console.log(linkedin)
+    //console.log(linkedin)
     return (
         <div className="integrant_card">
             {image}

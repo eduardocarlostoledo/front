@@ -278,7 +278,7 @@ export const AdminProducts = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(getAllProductsNameForAdmin(name));
-    console.log(name);
+    //console.log(name);
   };
 
   // Boton para traer todo de nuevo

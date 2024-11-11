@@ -13,7 +13,7 @@ export default function AddToCart (item){
     const handleSubmit = e => {
         e.preventDefault();
         const newItem = { name: item.name, image: item.image, price: item.price };        
-        console.log("NEW ITEM" , newItem)
+        //console.log("NEW ITEM" , newItem)
         fetch('https://back-production-148d.up.railway.app/cart', {
             method: 'POST',
             headers: {

@@ -89,7 +89,7 @@ export const CreateProducts = () => {
         
         setErrors( validate({ ...input, [e.target.name]: e.target.value}));
         setInput({...input, [e.target.name]: e.target.value});
-        console.log(input)
+        //console.log(input)
     }
     const handleChangeImage =(e) => {
         setInput({ ...input, image: e.target.files[0]})
@@ -97,12 +97,12 @@ export const CreateProducts = () => {
 
     const handleSocketChange = (event) => {
         const { value } = event.target;
-        console.log(value)
+        //console.log(value)
         setInput((input) => ({
           ...input,
           "info_adicional": {"socket": value},
         }));
-        console.log(input, 'ACA ESTA EL INPUT MOTHERBOARD O PROCESS')
+        //console.log(input, 'ACA ESTA EL INPUT MOTHERBOARD O PROCESS')
     };
     
     const navigate = useNavigate()
@@ -124,7 +124,7 @@ export const CreateProducts = () => {
             
             setErrors(validate(input))
             dispatch(createProduct(data));
-            console.log(data)
+            //console.log(data)
             swal('Created product', "", 'success');
             setInput({
                 name: "",

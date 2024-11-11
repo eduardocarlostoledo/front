@@ -15,7 +15,7 @@ export const Search = () => {
     const handleInputChange = (e) => {
         e.preventDefault();
         setName(e.target.value); // ver el tema del currentPage
-        console.log(name)
+        //console.log(name)
     }
 
     const handleSubmit = (e) => {

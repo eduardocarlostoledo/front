@@ -38,7 +38,7 @@ export function userRegister(payload) {
 export function userLogin(payload) { 
   return async function(dispatch){
       const response = await axios.post(`/users/login/`,payload);
-      console.log(response.data);
+      //console.log(response.data);
       return response;
   };
 };
@@ -55,7 +55,7 @@ export function GetFiltersForEmail () {
 };
 
 export function UserActive (payload) { 
-  console.log(payload, "paylo");
+  //console.log(payload, "paylo");
   return  function(dispatch){
       return dispatch({
           type: USER_ACTIVE,
@@ -86,7 +86,7 @@ export const PutUserProfile=(payload, id)=> async()=>{
   const user=await axios.put(`/users/${id}`,payload);
   const cacho=await axios.get(`/users/${id}`);
   localStorage.setItem("USUARIO", JSON.stringify(cacho.data.data))
-  console.log(cacho.data.data, "USER PUT USER")
+  //console.log(cacho.data.data, "USER PUT USER")
   return user;
 };
 
