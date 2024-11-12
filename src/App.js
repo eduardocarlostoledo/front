@@ -18,11 +18,12 @@ import { AdminUsers } from "./components/AdminUsers";
 import { AdminOrder } from "./components/AdminOrder";
 import { useNavigate } from "react-router-dom";
 import About from "./components/About";
+import Politica from "./components/Politica.jsx";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import ChangePass from "./components/Changepass";
 import axios from "axios";
 axios.defaults.baseURL = process.env.REACT_APP_BACK
-console.log(axios.defaults.baseURL, "asdasdsa")
+//console.log(axios.defaults.baseURL, "asdasdsa")
 
 function App() {
   const dispatch = useDispatch();
@@ -63,6 +64,8 @@ function App() {
 
         <Route path="/about" element={<About />} />
 
+        <Route path="/politica" element={<Politica />} />
+
         <Route path="/detail/:Name" element={<Detail />} />
 
         <Route path="/BuildPc" element={<BuildPc />} />
@@ -81,6 +84,8 @@ function App() {
         </Route>
 
         <Route path="/about" element={<About />} />
+
+        <Route path="/politica" element={<Politica />} />
 
         <Route
           path="/Profile"

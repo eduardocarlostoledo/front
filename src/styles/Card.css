@@ -25,7 +25,7 @@
 }
 
 .Imagen{
-    height: 150px;
+    height: 120px;
     width: 150px;
     object-fit: contain;
     border-bottom: blue;
@@ -108,9 +108,9 @@ font-size: 1.8vh;
 
 .ButtonC{
     width: 60px;
-    height: 50px;
-    margin-left: 160px;
-    margin-bottom: 30px;
+    /* height: 50px; */
+    /* margin-left: 160px; */
+    /* margin-bottom: 30px; */
     background-color: black;
     border-radius: 20px;
     position: absolute;
@@ -127,10 +127,10 @@ font-size: 1.8vh;
 .ContainerSumRestResponsive{
     display: none;
 }
-.addToCartDiv{
+/* .addToCartDiv{
     position: absolute;
     margin: 378px 20px 20px 75px;
-}
+} */
 
 
 @media screen and (max-width: 650px){
@@ -141,25 +141,27 @@ font-size: 1.8vh;
         padding: 0;
     }
     .LinkImage {
+        scale: 0.9;
         margin-top: 10px;
         margin-bottom: 0;
     }
     .card_p_nombre {
+        scale: 0.8;
         padding: 5px;
     }
-    .card_strong_precio{
-        margin: 0;
+    .card_strong_precio{       
+        margin-top: -30px;        
         padding-left: .5rem;
     }
     .ButtonCart {
         display: none;
     }
-    .addToCartDiv{
+    /* .addToCartDiv{
         transform: scale(.7);
         position: absolute;
         margin-top: 25px;
         margin-left: -13px;
-    }
+    } */
     .ContainerSumRest{
         display: none;
     }
@@ -177,6 +179,10 @@ font-size: 1.8vh;
     }
     .pResponsive {
         font-size: 20px;
+    }
+    .ButtonC{
+        position: absolute;
+        top: 265px;
     }
 }
 

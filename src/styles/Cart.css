@@ -7,16 +7,22 @@ body{
     margin: 0;
     margin-bottom: 240px;
 } */
-  
-.ContainerCart{
+
+
+.ContainerCart {
+    display: flex;
     margin-top: 120px;
     border-radius: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .h2{
+    border-radius: 20px;
     font-size:36px;
     text-transform:initial;
-    background-color: black;
+    background-color: #000b1f;
     color: white;
     padding: 10px;
     width: 300px;
@@ -25,7 +31,7 @@ body{
     align-items: center;
     margin-bottom: 60px;
 }
-
+/* 
 .h3{
     font-size:16px;
     background-color: black;
@@ -43,7 +49,7 @@ body{
     width: 200px;
     text-align: center;
     transform: translateY(-120px);
-}
+} */
 
 .NavCart{
     display: flex;
@@ -59,43 +65,46 @@ body{
 
 
 
-.ButtonCart{
-    color: black;
-    background: white;
-    border: 1px solid black;
-    height: 40px;
-}
-.ButtonCart:hover{
-    color: white;
-    background: black;
-}
+
+
 
 .ButtonDeleteAll{
-    font-size:16px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    padding-right: 30px;
+    border-radius: 20px;
+    background-color: #000b1f;
+
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
     align-content: center;
-    margin-bottom: 60px;
-    flex-wrap: wrap;
-    margin-left: auto;
+    
+    color: white;
+    padding: 10px;      
     width: 200px;
-    text-align: center;
+    
 }
 
-.BotonCheckout{
-    margin-top: -140px;
-    margin-bottom: 160px;
+
+.botones_de_pago div.BotonCheckout {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-right: 140px;
+    gap: 5px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.ButtonCart, .buttonIrTienda {
+    background-color: #009ee3;    
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto; 
+    display: block; 
 }
 
 @media screen and (max-width: 400px){

@@ -1,198 +1,187 @@
-.DetailC{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-    margin-bottom: 0;
-    margin-top: 60px;
-    height: auto;
-    width: 1100px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 60px;
-    margin-bottom: 60px;
-}
-
-.DetailC img{
-    width: 400px;
-}
-
-
-.Link {
-    position: absolute;
-    
-    text-decoration: none;
-    
-}
-
-
-
-.DataDiv {
-    
-    display: flex;
-    flex-direction: column;
-   
-    
-}
-.TypeBrandDiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    font-size: 20px;
-    background-color:rgb(8 19 39);
-    border-radius: 20px;
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 40px;
-    color: #ffffff;
-    
-}
-
-.Detalle{
-    background-color: rgb(164 171 180);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    padding: 10px;
-    border-radius: 20px;
-    text-align: justify;
-    padding: 40px;
-    margin-bottom: 20px;
-}
-
-.AmountDetail{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: blueviolet;
-    background-color: antiquewhite;
-    padding: 20px;
-    border-radius: 20px;
-}
-
-.ButtonDetail{
-    margin-top: 20px;
-    margin-left: -120px;
-}
-
-.ReviewListo{
-    text-align: justify;
-    background-color: white;
-    border-radius: 20px;
-    margin-right: 140px;
-    margin-left: 140px;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-@media only screen and (max-width: 1700px) {
-    .DetailContainer {
-        height: 35em;
-        width: 90%;
+/* Estilos generales */
+.NavDiv {
+    height: 0px;
     }
-    .DetailContainer img{
-        width: 450px;
+    
+    .detalleProducto {
+        max-width: 1000px;        
+        justify-content: center;
+        padding: 10px;
+        margin: 0 auto; /* Centrado en la página */
+        margin-top: 30px;
+        
     }
-    .Link {
-        left: 90px;
-    }
-  }
-
-.ContainerR{
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 650px){
-    .DetailC{
+    
+    .ContainerR {
+        display: flex;
         flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        justify-content: space-around;
-        margin: auto;
-        margin-bottom: 0;
-        margin-top: 60px;
-        height: auto;
-        width: 400px;
-        background-color: #ffffff;
+        color: #ffffff;
+        background-color: #202324;
         border-radius: 20px;
-        margin-bottom: 60px;
-    }
-    .DetailC img{
-        width: 300px;
-    }
-    .ReviewListo{
-        width: 500px;
-        transform: translateX(-60px);
-    }
-    .Link{
-        transform: translate3d(-4rem, -1.2rem, 0);
+        /* margin: 20px */
     }
     
-}
-@media screen and (max-width: 550px){
-    .DetailC{
-        width: 480px;
-        margin-left: 40px;
-    }
-    .ReviewListo{
-        width: 480px;
-        transform: translateX(-80px);
-    }
-    .starR{
-        margin-right: 20px;
-    }
-    .Link{
-        transform: translate3d(-6rem, -1.2rem, 0);
-    }
-}
-
-@media screen and (max-width: 450px){
-    .DetailC{
-        margin-left: 50px;
-        width: 350px;
+    .detalleDeProducto{
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 
-    .DetailC img{
-        width: 250px;
+    .DetailC {
+        width: 1000px;
+        display: flex;
+        background-color: #ffffff;
+        justify-content: center;
+        border-radius: 20px;
+        margin: 20px
+    
     }
-    .Link{
-        transform: translate3d(-6rem, -1.2rem, 0);
+    
+    .DataDiv {
+        border-radius: 20px 20px 20px 20px;
+        background-color: #ffffff;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
     }
-    .ReviewListo{
-        width: 300px;
-        transform: translateX(-60px);
+    
+    .ImageDetail {
+        border-radius: 20px;
+        margin: 20px;
+        height: fit-content;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
     }
-    .starR{
-        margin-right: 40px;
+    .addToCart {
+        margin:20px;
     }
-
-}
-
-@media screen and (max-width: 361px){
-    .DetailC{
-        width: 300px;
-        transform: translateX(-1rem);
+    .starsCalification {
+        color: #9b2727;
+        font-size: 10px;
+        margin-right: 10px;
     }
-    .ReviewListo{
-        width: 300px;
+    
+    .ReviewListo {
+        
+        border-radius: 20px;
+        margin: 20px
     }
-
-    .DetailC img{
+    
+    .inputReview {
+        border-radius: 20px;
+        margin: 20px
+    }
+    
+    .ButtonReview {
+        border-radius: 20px;
+        margin: 20px;    
+        text-align: center;    
+        align-content: center;
+        
+    }
+    
+    .bi-house {
+        color: rgb(241, 233, 233);
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    
+    .Link {
+        margin: 10px;
+        scale: 1.4;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: rgb(241, 233, 233);
+    }
+    
+    
+    .Detalle, .TypeBrandDiv {
+    
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    
+    /* Estilos para pantallas medianas (650px) */
+    @media screen and (max-width: 650px) {
+    
+    
+        .detalleProducto {
+            margin-top: 80px;     
+            
+            
+        }    
+    .DataDiv{
+        margin: 20px;
+        border-radius: 20px;
+    }
+        .DetailC {
+            flex-direction: column;        
+            align-items: baseline;
+        }
+    
+        .ContainerR {
+            margin: 20px;
+            border-radius: 20px;
+            
+        }
+    
+        .DetailC img {
+            width: 300px;
+        }
+    
+        .ReviewListo {
+            margin: 20px;
+            border-radius: 20px;
+        }
+    
+    }
+    
+    
+    
+    /* Estilos para pantallas aún más pequeñas (361px) */
+    @media screen and (max-width: 360px) {
+        .DetailC {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+        }
+        .Link{
+            margin: 20px;
+        }
+    
+        .ButtonDetail {
+            height: 50px;
         width: 200px;
+        }
+    
+        .ReviewListo {
+            width: 300px;
+        }
+    
+        .DetailC img {
+            width: 200px;
+        }
+    
+        .Detalle, .TypeBrandDiv {
+            margin: 20px;
+            border-radius: 20px;
+          }
+/* 
+          .ButtonC {
+            width: 60px;
+            height: 50px;          
+            background-color: black;
+            border-radius: 20px;
+            position: absolute;
+            left: 25px;            
+        } */
+
     }
-    .Detalle{
-        font-size: 12px;
-        padding: 20px;
-    }
-    .Link{
-        transform: translate3d(-6rem, -1.2rem, 0);
-    }
-}
+    

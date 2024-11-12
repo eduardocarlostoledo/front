@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa'
 import "../styles/StarsCalification.css";
 const StarsCalification = ({calif, setCalif, width}) => {
-    const [calification, setCalification] = useState(1)
+    const [calification, setCalification] = useState(5)
     const [hover,setHover]=useState('')
     const size = width? width: 50
     
@@ -13,7 +13,7 @@ const StarsCalification = ({calif, setCalif, width}) => {
     useEffect(()=>{ if(setCalif) setCalif(calification)} ,[calification])
 
     return (
-        <div className='starsCalification'>
+        <div className='starsCalificationPrincipal'>
             {[... new Array(5)].map((star, i)=>{
                 const califValue=i+1;
                 let starComponent = null

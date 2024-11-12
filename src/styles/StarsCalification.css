@@ -1,10 +1,25 @@
-.starsCalification{
+.starsCalificationPrincipal{
+    align-items: center;
+        align-content: center;
+        align-self: center;
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 160px;
     margin-top: 40px;
 }
+
+.starsCalification{
+    align-items: center;
+        align-content: center;
+        align-self: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 160px;
+    margin-top: 40px;
+}
+
 .star{
     cursor:pointer;
     transition: color 200ms;
@@ -40,5 +55,8 @@ input[type="radio"]{
     }
     .starsCalification{
         transform: translateX(6rem);
+        align-items: center;
+        align-content: center;
+        align-self: center;
     }
 }

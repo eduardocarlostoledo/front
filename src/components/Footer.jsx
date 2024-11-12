@@ -13,6 +13,11 @@ export const Footer = () => {
                 <Link className='LinkMembers' to="/about">
               <h3><strong> Members </strong></h3>    
                 </Link>
+
+                <Link className='LinkMembers' to="/politica">
+              <h3><strong> Politica </strong></h3>    
+                </Link>
+
             </div>
                         <p className='Copyright' >Copyright ©. Computer store.</p> 
         </footer>

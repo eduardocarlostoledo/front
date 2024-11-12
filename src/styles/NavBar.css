@@ -176,7 +176,10 @@
         width: 50px;
     }
 }
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 360px) {
+    .HomeButton {
+        margin: 15px;
+    }
     .Responsive{
         width: 100%;
     }

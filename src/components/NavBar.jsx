@@ -20,12 +20,7 @@ export const NavBar = () => {
 
   const carts = useSelector((state) => state.cart);
   const itemQuantity = carts.reduce((acc, item) => acc + item.amount, 0);
-  // console.log(itemQuantity);
-    // let Nav = useSelector((state) => state.ChangeNav);
-    // let Nav = useSelector((state) => state.UserActive);
-    // let usuario = JSON.parse(localStorage.getItem("USUARIO"))
-    // console.log(Nav);
-    // let Nav 
+  
   useEffect(() => {
     dispatch(getUpdate());
     dispatch(getCart());
@@ -73,7 +68,7 @@ export const NavBar = () => {
             <button className="CartContainer">
               {" "}
               <AiOutlineShoppingCart className="Cart" />
-              {itemQuantity}
+              {/* {itemQuantity} */}
             </button>
           </Link>
         </div>
@@ -166,7 +161,7 @@ export const NavBar = () => {
             <button className="CartContainer">
               {" "}
               <AiOutlineShoppingCart size="35px" className="Cart" />
-              {itemQuantity}
+              {/* {itemQuantity} */}
             </button>
           </Link>
         </div>

@@ -29,9 +29,6 @@
     gap: 6px;
 }
 
-.DivProducts{
-    margin-bottom: 230px;
-}
 
 .ContainerFilters{
     
@@ -159,11 +156,11 @@
         gap: 5px;
         margin-bottom: 0;
     }
-    .CardContainer{
+    .CardContainer{        
         justify-content: center;
         margin: 0;
         padding: 0;
-        gap: 0;
+        /* gap: 0; */
     }
     .DivAllCards{
         scale: 0.95;
@@ -171,6 +168,8 @@
 }
 
 @media screen and (max-width: 360px){
+
+
     .DivAllCards{
         scale: 0.95;
     }
