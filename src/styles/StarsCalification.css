@@ -1,4 +1,5 @@
 .starsCalificationPrincipal{
+   
     align-items: center;
         align-content: center;
         align-self: center;
@@ -8,6 +9,21 @@
     margin-right: 160px;
     margin-top: 40px;
 }
+
+.starsCalificacionProducto {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    margin-top: 20px;
+    scale: 2;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+      0 0 5px #fff,
+      0 0 10px #fff,     
+}
+
 
 .starsCalification{
     align-items: center;
@@ -58,5 +74,16 @@ input[type="radio"]{
         align-items: center;
         align-content: center;
         align-self: center;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .star{
+        width: 20px;
+    }
+    div.starsCalificacionProducto {
+        
+        justify-self: center;
+
     }
 }

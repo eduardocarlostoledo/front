@@ -28,33 +28,60 @@
     }
 
     .DetailC {
-        width: 1000px;
+
+        display: grid
+;
+    grid-template-areas:
+        "ImageDetail ImageDetail ImageDetail"
+        "ImageDetail ImageDetail ImageDetail"
+        "DataDiv DataDiv DataDiv"
+        "TypeBrandDiv Detalle AmountDetail"        ;
+    
+    grid-template-rows: 50%, 20px, 20px, 50%;
+    background-color: #ffffff;
+    border-radius: 20px;
+
+        /* width: 1000px;
         display: flex;
         background-color: #ffffff;
         justify-content: center;
+        align-items: center;
         border-radius: 20px;
         margin: 20px
-    
+     */
     }
+
     
     .DataDiv {
         border-radius: 20px 20px 20px 20px;
-        background-color: #ffffff;
-        /* display: flex;
+        background-color: #04000e;
+        color: white;
+        display: flex
+    ;
         flex-direction: column;
         justify-content: center;
-        align-items: center; */
+        padding: 20px;
     }
+
+    /* .DataDiv {
+        border-radius: 20px 20px 20px 20px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    } */
     
     .ImageDetail {
-        border-radius: 20px;
+        /* border-radius: 20px;
         margin: 20px;
         height: fit-content;
         width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
+        scale: 0.5;
      
     }
     .addToCart {
