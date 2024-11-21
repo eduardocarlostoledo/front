@@ -129,7 +129,7 @@ export const Login = () => {
     /* global google */
     google.accounts.id.initialize({
       client_id:
-        "816022596259-o6ktnr2grp3kpla75vn0f7n12o8nmej7.apps.googleusercontent.com",
+        process.env.REACT_APP_GOOGLE_ID_CLIENT,
       callback: HandleCallbackResponse,
     });
     google.accounts.id.renderButton(document.getElementById("signInDiv"), {
